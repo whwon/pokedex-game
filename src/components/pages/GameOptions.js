@@ -32,16 +32,16 @@ function GameOptions() {
   return (
     <div className="options">
       <button className="accordion" onClick={() => accordion('panel1')}>
-        Random Pokemon
+        PokeDex
       </button>
       {panel1 && (
         <div className="panel">
           <p className="description">
             If you simply just want to look at all of the different pokemon for
-            the fun of it.
+            the fun of it. Check out the PokeDex!
           </p>
-          <Link to="/RandomPokeMon">
-            <li>Let's Play!</li>
+          <Link to="/PokeDex">
+            <li>Let's Go!</li>
           </Link>
         </div>
       )}

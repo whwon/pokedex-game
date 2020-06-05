@@ -1,0 +1,386 @@
+.pokedex-body {
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 700px;
+  height: 500px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.pokedex-left {
+  border: 2px solid black;
+  width: 50%;
+  height: auto;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+.status-lights {
+  display: flex;
+  flex-direction: row;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.blinker {
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: lightskyblue;
+  width: 50px;
+  height: 50px;
+  margin: 0rem 1rem 0rem 0rem;
+  -webkit-animation: blinkBlue 1.5s infinite;
+  -moz-animation: blinkBlue 1.5s infinite;
+  -ms-animation: blinkBlue 1.5s infinite;
+  -o-animation: blinkBlue 1.5s infinite;
+  animation: blinkBlue 1.5s infinite;
+}
+
+@-webkit-keyframes blinkBlue {
+  from { background-color: rgb(95, 177, 228); }
+  50% { background-color: #24E0FF; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3F8CFF 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: rgb(90, 183, 245); }
+}
+@-moz-keyframes blinkBlue {
+  from { background-color: rgb(90, 183, 245); }
+  50% { background-color: #24E0FF; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3F8CFF 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: rgb(90, 183, 245); }
+}
+@-ms-keyframes blinkBlue {
+  from { background-color: rgb(90, 183, 245); }
+  50% { background-color: #24E0FF; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3F8CFF 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: rgb(90, 183, 245); }
+}
+@-o-keyframes blinkBlue {
+  from { background-color: rgb(90, 183, 245); }
+  50% { background-color: #24E0FF; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3F8CFF 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: rgb(90, 183, 245); }
+}
+@keyframes blinkBlue {
+  from { background-color: rgb(90, 183, 245); }
+  50% { background-color: #24E0FF; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3F8CFF 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: rgb(90, 183, 245); }
+}
+
+.red-light {
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  margin: 0rem 0.5rem 0rem 0rem;
+  -webkit-animation: blinkRed 1.5s infinite;
+  -moz-animation: blinkRed 1.5s infinite;
+  -ms-animation: blinkRed 1.5s infinite;
+  -o-animation: blinkRed 1.5s infinite;
+  animation: blinkRed 1.5s infinite;
+}
+
+@-webkit-keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+  to { background-color: #F00; }
+}
+@-moz-keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+  to { background-color: #F00; }
+}
+@-ms-keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+  to { background-color: #F00; }
+}
+@-o-keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+  to { background-color: #F00; }
+}
+@keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+  to { background-color: #F00; }
+}
+
+.yellow-light {
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: yellow;
+  width: 10px;
+  height: 10px;
+  margin: 0rem 0.5rem 0rem 0rem;
+  -webkit-animation: blinkYellow 1.5s infinite;
+  -moz-animation: blinkYellow 1.5s infinite;
+  -ms-animation: blinkYellow 1.5s infinite;
+  -o-animation: blinkYellow 1.5s infinite;
+  animation: blinkYellow 1.5s infinite;
+}
+
+@-webkit-keyframes blinkYellow {
+  from { background-color: #FF0; }
+  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #FF0; }
+}
+@-moz-keyframes blinkYellow {
+  from { background-color: #FF0; }
+  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #FF0; }
+}
+@-ms-keyframes blinkYellow {
+  from { background-color: #FF0; }
+  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #FF0; }
+}
+@-o-keyframes blinkYellow {
+  from { background-color: #FF0; }
+  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #FF0; }
+}
+@keyframes blinkYellow {
+  from { background-color: #FF0; }
+  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #FF0; }
+}
+
+.green-light {
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  -webkit-animation: blinkGreen 1.5s infinite;
+  -moz-animation: blinkGreen 1.5s infinite;
+  -ms-animation: blinkGreen 1.5s infinite;
+  -o-animation: blinkGreen 1.5s infinite;
+  animation: blinkGreen 1.5s infinite;
+}
+
+@-webkit-keyframes blinkGreen {
+  from { background-color: #304701; }
+  50% { background-color: #ABFF00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89FF00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #304701; }
+}
+@-moz-keyframes blinkGreen {
+  from { background-color: #304701; }
+  50% { background-color: #ABFF00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89FF00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #304701; }
+}
+@-ms-keyframes blinkGreen {
+  from { background-color: #304701; }
+  50% { background-color: #ABFF00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89FF00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #304701; }
+}
+@-o-keyframes blinkGreen {
+  from { background-color: #304701; }
+  50% { background-color: #ABFF00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89FF00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #304701; }
+}
+@keyframes blinkGreen {
+  from { background-color: #304701; }
+  50% { background-color: #ABFF00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89FF00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0;}
+  to { background-color: #304701; }
+}
+
+.screen-container {
+  border-radius: 10px;
+  background-color: white;
+  width: auto;
+  height: 260px;
+  padding: 1rem;
+}
+
+.screen {
+  background-color: lightskyblue;
+  border: 2px solid white;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-image {
+  image-rendering: pixelated;
+  width: 70%;
+  height: auto;
+}
+
+.underScreen-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red-dot {
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: blinkRed 1.5s infinite;
+  -moz-animation: blinkRed 1.5s infinite;
+  -ms-animation: blinkRed 1.5s infinite;
+  -o-animation: blinkRed 1.5s infinite;
+  animation: blinkRed 1.5s infinite;
+}
+
+.quad-horizontal {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.bottom-detail {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.pokemon-id {
+  border: 1px solid black;
+  background-color: rgb(1, 155, 1);
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.next-pokemon, .right-arrow-button {
+  cursor: pointer;
+}
+
+.next-pokemon {
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.next-pokemon:hover {
+  border-color: lightgreen;
+}
+
+.right-arrow-button {
+  font-size: 2rem;
+}
+
+.pokedex-right {
+  border: 2px solid black;
+  width: 50%;
+  height: 70%;
+  padding: 1.5rem;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+.pokemon-name-container {
+  background-color: lightgreen;
+  border: 2px solid black;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0rem 0rem 1rem 0rem;
+  text-align: center;
+}
+
+.pokemon-name {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.ability-stats-container {
+  border: 2px solid black;
+  background-color: rgb(1, 155, 1);
+  width: 180px;
+  height: 150px;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ability-stats-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.ability-stats-info {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.physical-stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: greenyellow;
+  width: 90px;
+  height: 150px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  text-align: start;
+}
+
+.pokemon-types {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  width: 100%;
+  height: 40px;
+  margin: 0.5rem 0rem 0rem 0rem;
+  text-transform: uppercase;
+}
+
+.pokemon-type1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pokemon-type2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pokemon-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 100%;
+  height: 40px;
+  margin: 0.5rem 0rem 0rem 0rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
