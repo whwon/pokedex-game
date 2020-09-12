@@ -1,14 +1,13 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import StartingPokeBall from './loading/StartingPokeBall';
-import GameOptions from './pages/GameOptions';
-import PokeDex from './pages/PokeDex';
-import GuessImage from './pages/GuessImage';
-import GuessStats from './pages/GuessStats';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import NavBar from './navigation/NavBar';
+import StartingPokeBall from './components/loading/StartingPokeBall';
+import GameOptions from './pages/home/GameOptions';
+import PokeDex from './pages/pokedex/PokeDex';
+import GuessImage from './pages/guess-image/GuessImage';
+import GuessStats from './pages/guess-stats/GuessStats';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import NavBar from './components/navigation/NavBar';
 
 function App() {
   return (
