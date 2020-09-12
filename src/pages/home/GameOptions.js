@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './GameOptions.css';
 import { Link } from 'react-router-dom';
 
 function GameOptions() {

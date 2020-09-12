@@ -1,0 +1,11 @@
+// base - holds global variables
+@import './base/app';
+@import './base/variables';
+
+// pages - holds all of the css for each individual pages
+@import './pages/home';
+@import './pages/pokedex';
+
+// components - holds all of the css for each components
+@import './components/loading';
+@import './components/navbar';

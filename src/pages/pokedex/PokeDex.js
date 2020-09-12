@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './PokeDex.css';
 
 function PokeDex() {
   useEffect(() => {
