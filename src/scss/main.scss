@@ -1,6 +1,6 @@
 // base - holds global variables
-@import './base/app';
 @import './base/variables';
+@import './base/app';
 
 // pages - holds all of the css for each individual pages
 @import './pages/home';
@@ -8,4 +8,6 @@
 
 // components - holds all of the css for each components
 @import './components/loading';
+@import './components/backdrop';
 @import './components/navbar';
+@import './components/sidedrawer';

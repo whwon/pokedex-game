@@ -5,7 +5,7 @@ function StartingPokeBall() {
 
   return (
     <div className="pokeball">
-      <Link to="/GameOptions">
+      <Link to="/home">
         <div className="pokeball_button"></div>
       </Link>
     </div>

@@ -1,66 +1,47 @@
 @charset "UTF-8";
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+ul, li {
+  list-style: none; }
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 'navigation' 'content';
+  grid-template-rows: 8% 92%; }
+
+.Content {
+  grid-area: content;
   width: 100%;
-  height: 100%; }
-
-body {
-  margin: 0; }
-
-.App-body {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #282c34; }
 
 .App-link {
   color: #61dafb; }
 
-.options {
-  width: 18em; }
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s; }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  background-color: #ccc; }
-
-.accordion:after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px; }
-
-.active:after {
-  content: '\2796';
-  /* Unicode character for "minus" sign (-) */ }
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
+.Card {
   display: block;
-  overflow: hidden; }
-
-.description {
-  text-align: start;
-  color: #282c34;
-  font-size: 1.2rem; }
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem 0;
+  background-color: #f2f2f2; }
 
 .pokedex-body {
   background-color: red;
@@ -573,27 +554,81 @@ body {
   100% {
     top: 0; } }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  display: flex;
-  justify-content: space-between; }
+.BackDrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100; }
 
-.topnav li {
+.NavBar {
+  grid-area: navigation;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333; }
+  .NavBar_Logo {
+    display: flex;
+    flex-direction: row; }
+  .NavBar_Title {
+    display: none; }
+  .NavBar_Hamburger-Menu {
+    font-size: 1.8rem;
+    margin: auto 1rem auto 0;
+    color: #f2f2f2;
+    cursor: pointer; }
+  .NavBar_List-Menu {
+    display: none; }
+
+.NavBar li {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem 1.2rem;
   text-decoration: none;
-  font-size: 17px; }
+  font-size: 1.2rem; }
 
-.topnav li:hover {
-  background-color: #ddd;
-  color: black; }
+.NavBar li:hover {
+  color: black;
+  background-color: #ddd; }
 
-.topnav li.current {
-  background-color: #4caf50;
-  color: white; }
+.NavBar li.Current {
+  display: flex;
+  flex-direction: row;
+  color: #f2f2f2;
+  background-color: #4caf50; }
 
-li {
-  list-style: none; }
+.NavBar img {
+  width: 2rem;
+  height: auto; }
+
+.SideDrawer {
+  height: 100%;
+  background: #f2f2f2;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  max-width: 400px;
+  z-index: 200; }
+  .SideDrawer_Close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.6rem;
+    padding: 0.8rem 1rem 0 80%;
+    color: #4caf50; }
+  .SideDrawer_Links {
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .SideDrawer a {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: #4caf50; }
+  .SideDrawer a:hover {
+    color: #61dafb; }

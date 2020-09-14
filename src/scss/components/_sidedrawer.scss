@@ -1,0 +1,38 @@
+.SideDrawer {
+  height: 100%;
+  background: $white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  max-width: 400px;
+  z-index: 200;
+
+  &_Close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.6rem;
+    padding: 0.8rem 1rem 0 80%;
+    color: $green;
+  }
+
+  &_Links {
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: $green;
+  }
+
+  a:hover {
+    color: $blueLink;
+  }
+}

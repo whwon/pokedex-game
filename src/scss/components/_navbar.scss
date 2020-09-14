@@ -1,29 +1,52 @@
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+.NavBar {
+  grid-area: navigation;
   display: flex;
   justify-content: space-between;
+  background-color: $blackBackground;
+
+  &_Logo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_Title {
+    display: none;
+  }
+
+  &_Hamburger-Menu {
+    font-size: 1.8rem;
+    margin: auto 1rem auto 0;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &_List-Menu {
+    display: none;
+  }
 }
 
-.topnav li {
+.NavBar li {
   float: left;
-  color: #f2f2f2;
+  color: $white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem 1.2rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.2rem;
 }
 
-.topnav li:hover {
-  background-color: #ddd;
-  color: black;
+.NavBar li:hover {
+  color: $black;
+  background-color: $gray;
 }
 
-.topnav li.current {
-  background-color: #4caf50;
-  color: white;
+.NavBar li.Current {
+  display: flex;
+  flex-direction: row;
+  color: $white;
+  background-color: $green;
 }
 
-li {
-  list-style: none;
+.NavBar img {
+  width: 2rem;
+  height: auto;
 }
