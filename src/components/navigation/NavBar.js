@@ -7,11 +7,9 @@ const NavBar = (props) => {
     <React.Fragment>
       <div className="NavBar">
         <div className="NavBar_Logo">
-          <Link to="/">
-            <li className="Current" href="#home">
-              <img alt="pokeball" src={pokeball} />
-              <div className="NavBar_Title">Who's That PokeMon</div>
-            </li>
+          <Link className="NavBar_Home" to="/">
+            <img alt="pokeball" src={pokeball} />
+            <div className="NavBar_Title">Who's That PokeMon</div>
           </Link>
         </div>
         <div

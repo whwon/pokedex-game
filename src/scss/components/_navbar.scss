@@ -1,5 +1,8 @@
 .NavBar {
-  grid-area: navigation;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   background-color: $blackBackground;
@@ -7,6 +10,15 @@
   &_Logo {
     display: flex;
     flex-direction: row;
+  }
+
+  &_Home {
+    width: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: $white;
+    background-color: $green;
   }
 
   &_Title {
@@ -39,14 +51,8 @@
   background-color: $gray;
 }
 
-.NavBar li.Current {
-  display: flex;
-  flex-direction: row;
-  color: $white;
-  background-color: $green;
-}
-
 .NavBar img {
   width: 2rem;
   height: auto;
+  margin: auto;
 }
