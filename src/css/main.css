@@ -12,7 +12,7 @@ ul, li {
 
 .App {
   width: 100vw;
-  height: 100%; }
+  height: 100vh; }
 
 .Content {
   width: 100%;
