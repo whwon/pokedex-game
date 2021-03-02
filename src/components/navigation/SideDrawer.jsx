@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BackDrop from '../backdrop/BackDrop';
 
-const SideDrawer = (props) => {
+const SideDrawer = ({toggleDrawer}) => {
 
   const closeDrawer = () => {
-    props.toggleDrawer(false);
+    toggleDrawer(false);
   }
 
   return (
     <>
-      <BackDrop toggleDrawer={props.toggleDrawer} />
+      <BackDrop toggleDrawer={toggleDrawer} />
       <div className="SideDrawer">
         <div
           className="SideDrawer_Close"

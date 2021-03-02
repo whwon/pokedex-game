@@ -1,6 +1,9 @@
-body, ul, li {
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a {
@@ -8,25 +11,25 @@ a {
   text-decoration: none;
 }
 
-ul, li {
-  list-style: none;
-}
-
 .App {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'nav nav'
+    'main main';
+  grid-template-rows: 8% 92%;
+  grid-template-columns: 1fr 1fr;
+  background-color: $blueBackground;
 }
 
 .Content {
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4rem;
-  background-color: $blueBackground;
+  grid-area: main;
+}
+
+.NavLess-Content {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .App-link {
