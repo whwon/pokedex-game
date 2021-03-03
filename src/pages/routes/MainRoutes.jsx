@@ -9,6 +9,7 @@ import GuessImage from '../guess-image/GuessImage';
 import GuessStats from '../guess-stats/GuessStats';
 import About from '../about/About';
 import Contact from '../contact/Contact';
+import Test from '../pokedex/Test';
 
 const MainRoutes = ({ location }) => {
   const [showDrawer, toggleDrawer] = useState(false);
@@ -22,6 +23,7 @@ const MainRoutes = ({ location }) => {
           <Route path={["/", "/home"]} exact component={Home} />
           <Route path="/pokedex">
             <PokeDexMobile toggleDrawer={toggleDrawer}/>
+            {/* <Test /> */}
           </Route>
           <Route path="/image-game" component={GuessImage} />
           <Route path="/stats-game" component={GuessStats} />

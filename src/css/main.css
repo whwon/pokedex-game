@@ -6,6 +6,9 @@ li {
   padding: 0;
   list-style: none; }
 
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -292,13 +295,7 @@ a {
       margin: auto 0.5rem auto 0;
       color: black;
       cursor: pointer; }
-  .pokedex .screen {
-    grid-column: 1 / -1;
-    grid-row: span 12;
-    background-color: #f2f2f2;
-    border: 1px solid black;
-    margin: 1rem; }
-  .pokedex .footer {
+  .pokedex .control {
     grid-column: 1 / -1;
     grid-row: span 3;
     border-top: 1px solid black; }
@@ -388,7 +385,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 100; }
 
 .NavBar {
@@ -464,3 +461,99 @@ a {
     color: #f2f2f2; }
   .SideDrawer a:hover {
     color: #61dafb; }
+
+.screen {
+  grid-column: 1 / -1;
+  grid-row: span 12;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .screen_image {
+    width: 100px;
+    height: 100px; }
+
+/* Poké Styles */
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 5px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset -10px 10px 0 10px #ccc;
+  animation: shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  z-index: 110; }
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.loader:before {
+  background: red;
+  width: 100%;
+  height: 50%; }
+
+.loader:after {
+  top: calc(50% - 10px);
+  width: 100%;
+  height: 10px;
+  background: #000; }
+
+.loader_button {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background: #7f8c8d;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  z-index: 110;
+  box-shadow: 0 0 0 5px black;
+  animation: blink 0.5s alternate infinite;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+/* Animation */
+@keyframes blink {
+  from {
+    background: #eee; }
+  to {
+    background: #e74c3c; } }
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0); }
+  20% {
+    transform: translate(-10px, 0) rotate(-20deg); }
+  30% {
+    transform: translate(10px, 0) rotate(20deg); }
+  50% {
+    transform: translate(-10px, 0) rotate(-10deg); }
+  60% {
+    transform: translate(10px, 0) rotate(10deg); }
+  100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.loader-backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }

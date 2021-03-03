@@ -1,0 +1,16 @@
+.screen {
+  grid-column: 1 / -1;
+  grid-row: span 12;
+  background-color: $white;
+  border: 1px solid $black;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_image {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,84 @@
+/* Poké Styles */
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 5px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset -10px 10px 0 10px #ccc;
+  animation: shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  z-index: 110;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loader:before {
+  background: $red;
+  width: 100%;
+  height: 50%;
+}
+
+.loader:after {
+  top: calc(50% - 10px);
+  width: 100%;
+  height: 10px;
+  background: #000;
+}
+
+.loader_button {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background: #7f8c8d;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  z-index: 110;
+  box-shadow: 0 0 0 5px black;
+  animation: blink 0.5s alternate infinite;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* Animation */
+@keyframes blink {
+  from {
+    background: #eee;
+  }
+  to {
+    background: #e74c3c;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    transform: translate(-10px, 0) rotate(-20deg);
+  }
+  30% {
+    transform: translate(10px, 0) rotate(20deg);
+  }
+  50% {
+    transform: translate(-10px, 0) rotate(-10deg);
+  }
+  60% {
+    transform: translate(10px, 0) rotate(10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
