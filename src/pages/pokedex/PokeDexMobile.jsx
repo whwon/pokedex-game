@@ -31,12 +31,15 @@ const PokeDexMobile = ({toggleDrawer}) => {
       </div>
       <Screen pokemon={data} status={status}/>
       <div className='control'>
-        <div>
-          <button disabled={pokemonId === 1} onClick={() => setPokemonId(old => Math.max(old - 1, 1))}>{'<'}</button>
-        </div>
-        <div>Pokemon ID: {pokemonId}</div>
-        <div>
-          <button onClick={() => setPokemonId(old => old + 1)}>{'>'}</button>
+        <div className='control_pokemon-name'>{data && data.name.toUpperCase()}</div>
+        <div className='control_pokemon-id'>ID: {pokemonId}</div>
+        <div className='control_button-group'>
+          <div className='control_left-button-wrapper'>
+            <button disabled={pokemonId === 1} onClick={() => setPokemonId(old => Math.max(old - 1, 1))}>{'<'}</button>
+          </div>
+          <div className='control_right-button-wrapper'>
+            <button onClick={() => setPokemonId(old => old + 1)}>{'>'}</button>
+          </div>
         </div>
       </div>
     </div>

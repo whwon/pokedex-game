@@ -352,5 +352,49 @@
     grid-column: 1 / -1;
     grid-row: span 3;
     border-top: 1px solid $black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    &_pokemon-name {
+      grid-column: 1 / 6;
+      // color: #feca1b;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &_pokemon-id {
+      grid-column: 1/ 6;
+      font-size: 1.2rem;
+    }
+
+    &_button-group {
+      grid-column: 6 / -1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_left-button-wrapper {
+      width: 50px;
+      height: 50px;
+      border: 1px solid $black;
+      border-radius: 50%;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_right-button-wrapper {
+      width: 50px;
+      height: 50px;
+      border: 1px solid $black;
+      border-radius: 50%;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
