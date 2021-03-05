@@ -27,4 +27,11 @@
     width: 250px;
     height: 250px;
   }
+
+  &_stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 2.4rem;
+  }
 }

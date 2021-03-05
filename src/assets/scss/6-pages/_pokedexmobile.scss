@@ -341,7 +341,7 @@
     }
 
     & .hamburger-menu {
-      font-size: 1.8rem;
+      font-size: 2.8rem;
       margin: auto 0.5rem auto 0;
       color: $black;
       cursor: pointer;
@@ -350,17 +350,46 @@
 
   & .control {
     grid-column: 1 / -1;
-    grid-row: span 3;
+    grid-row: span 6;
     border-top: 1px solid $black;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 
-    &_pokemon-name {
-      grid-column: 1 / 6;
-      // color: #feca1b;
-      font-size: 1.2rem;
+    &_name-container {
+      grid-column: 1 / 9;
+      grid-row: 1 / 4;
+      background-color: #51ae5f;
+      border: 1px solid $black;
+      font-size: 2rem;
       font-weight: bold;
+      margin: 0.5rem 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &_name {
+      color: $black;
+      padding: 0 0 0 1rem;
+    }
+
+    &_info-button-wrapper {
+      grid-column: 9 / -1;
+      grid-row: 1 / 4;
+      width: 50px;
+      height: 50px;
+      border: 1px solid lightblue;
+      border-radius: 50%;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_info-button {
+      color: $black;
+      font-size: 3rem;
     }
 
     &_pokemon-id {
@@ -368,8 +397,22 @@
       font-size: 1.2rem;
     }
 
+    &_pokemon-types {
+      grid-column: 1 / 6;
+      grid-row: span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_pokemon-type {
+      font-size: 2rem;
+    }
+
     &_button-group {
       grid-column: 6 / -1;
+      grid-row: 4 / 6;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -395,6 +438,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    &_direction-button {
+      font-size: 3rem;
     }
   }
 }

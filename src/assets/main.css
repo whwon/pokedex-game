@@ -1,0 +1,1002 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+.BackDrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100; }
+
+/* Poké Styles */
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 5px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset -10px 10px 0 10px #ccc;
+  animation: shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  z-index: 110; }
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.loader:before {
+  background: red;
+  width: 100%;
+  height: 50%; }
+
+.loader:after {
+  top: calc(50% - 10px);
+  width: 100%;
+  height: 10px;
+  background: #000; }
+
+.loader_button {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background: #7f8c8d;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  z-index: 110;
+  box-shadow: 0 0 0 5px black;
+  animation: blink 0.5s alternate infinite;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+/* Animation */
+@keyframes blink {
+  from {
+    background: #eee; }
+  to {
+    background: #e74c3c; } }
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0); }
+  20% {
+    transform: translate(-10px, 0) rotate(-20deg); }
+  30% {
+    transform: translate(10px, 0) rotate(20deg); }
+  50% {
+    transform: translate(-10px, 0) rotate(-10deg); }
+  60% {
+    transform: translate(10px, 0) rotate(10deg); }
+  100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.loader-backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; }
+
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer; }
+
+figure {
+  margin: 0; }
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit; }
+
+p {
+  margin: 0; }
+
+cite {
+  font-style: normal; }
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%;
+  /*for using REM units*/ }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #222; }
+
+.NavBar {
+  grid-area: nav;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333; }
+  .NavBar_Logo {
+    display: flex;
+    flex-direction: row; }
+  .NavBar_Home {
+    width: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: #f2f2f2;
+    background-color: #4caf50; }
+  .NavBar_Title {
+    display: none; }
+  .NavBar_Hamburger-Menu {
+    font-size: 1.8rem;
+    margin: auto 1rem auto 0;
+    color: #f2f2f2;
+    cursor: pointer; }
+  .NavBar_List-Menu {
+    display: none; }
+
+.NavBar li {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+  font-size: 1.2rem; }
+
+.NavBar li:hover {
+  color: black;
+  background-color: #ddd; }
+
+.NavBar img {
+  width: 2rem;
+  height: auto;
+  margin: auto; }
+
+.SideDrawer {
+  height: 100%;
+  background: #333;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  max-width: 400px;
+  z-index: 200; }
+  .SideDrawer_Close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.6rem;
+    padding: 0.8rem 1rem 0 80%;
+    color: #4caf50; }
+  .SideDrawer_Links {
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .SideDrawer a {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: #f2f2f2; }
+  .SideDrawer a:hover {
+    color: #61dafb; }
+
+.screen {
+  grid-column: 1 / -1;
+  grid-row: span 12;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .screen_inner-screen {
+    background-color: #84d5f8;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .screen_image {
+    width: 250px;
+    height: 250px; }
+  .screen_stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 2.4rem; }
+
+/* Poké Styles */
+.pokeball {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border: 10px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset -10px 10px 0 10px #ccc;
+  animation: fall 0.25s ease-in-out, shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite; }
+
+.pokeball:before,
+.pokeball:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.pokeball:before {
+  background: red;
+  width: 100%;
+  height: 50%; }
+
+.pokeball:after {
+  top: calc(50% - 10px);
+  width: 100%;
+  height: 20px;
+  background: #000; }
+
+.pokeball_button {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background: #7f8c8d;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 0 10px black;
+  animation: blink 0.5s alternate infinite;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+/* Animation */
+@keyframes blink {
+  from {
+    background: #eee; }
+  to {
+    background: #e74c3c; } }
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0); }
+  20% {
+    transform: translate(-10px, 0) rotate(-20deg); }
+  30% {
+    transform: translate(10px, 0) rotate(20deg); }
+  50% {
+    transform: translate(-10px, 0) rotate(-10deg); }
+  60% {
+    transform: translate(10px, 0) rotate(10deg); }
+  100% {
+    transform: translate(0, 0) rotate(0); } }
+
+@keyframes fall {
+  0% {
+    top: -200px; }
+  60% {
+    top: 0; }
+  80% {
+    top: -20px; }
+  100% {
+    top: 0; } }
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 'nav nav' 'main main';
+  grid-template-rows: 8% 92%;
+  grid-template-columns: 1fr 1fr;
+  background-color: #282c34; }
+
+.Content {
+  grid-area: main; }
+
+.NavLess-Content {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1; }
+
+.App-link {
+  color: #61dafb; }
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.Card {
+  display: inline-block;
+  width: 18rem;
+  height: 15rem;
+  margin: 2rem 0;
+  background-color: #f2f2f2; }
+
+.pokedex {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(20, 1fr); }
+  .pokedex .header {
+    grid-column: 1 / -1;
+    grid-row: span 2;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem; }
+    .pokedex .header .status-lights {
+      display: flex;
+      flex-direction: row;
+      margin: auto 0; }
+    .pokedex .header .blinker {
+      border: 2px solid white;
+      border-radius: 50%;
+      background-color: lightskyblue;
+      width: 50px;
+      height: 50px;
+      margin: 0rem 1rem 0rem 0rem;
+      -webkit-animation: blinkBlue 1.5s infinite;
+      -moz-animation: blinkBlue 1.5s infinite;
+      -ms-animation: blinkBlue 1.5s infinite;
+      -o-animation: blinkBlue 1.5s infinite;
+      animation: blinkBlue 1.5s infinite; }
+
+@-webkit-keyframes blinkBlue {
+  from {
+    background-color: #5fb1e4; }
+  50% {
+    background-color: #24e0ff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3f8cff 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #5ab7f5; } }
+
+@-moz-keyframes blinkBlue {
+  from {
+    background-color: #5ab7f5; }
+  50% {
+    background-color: #24e0ff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3f8cff 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #5ab7f5; } }
+
+@-ms-keyframes blinkBlue {
+  .pokedex .header from {
+    background-color: #5ab7f5; }
+  .pokedex .header 50% {
+    background-color: #24e0ff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3f8cff 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  .pokedex .header to {
+    background-color: #5ab7f5; } }
+
+@-o-keyframes blinkBlue {
+  from {
+    background-color: #5ab7f5; }
+  50% {
+    background-color: #24e0ff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3f8cff 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #5ab7f5; } }
+
+@keyframes blinkBlue {
+  from {
+    background-color: #5ab7f5; }
+  50% {
+    background-color: #24e0ff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #3f8cff 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #5ab7f5; } }
+    .pokedex .header .red-light {
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: red;
+      width: 10px;
+      height: 10px;
+      margin: 0rem 0.5rem 0rem 0rem;
+      -webkit-animation: blinkRed 1.5s infinite;
+      -moz-animation: blinkRed 1.5s infinite;
+      -ms-animation: blinkRed 1.5s infinite;
+      -o-animation: blinkRed 1.5s infinite;
+      animation: blinkRed 1.5s infinite; }
+
+@-webkit-keyframes blinkRed {
+  from {
+    background-color: #f00; }
+  50% {
+    background-color: #a00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0; }
+  to {
+    background-color: #f00; } }
+
+@-moz-keyframes blinkRed {
+  from {
+    background-color: #f00; }
+  50% {
+    background-color: #a00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0; }
+  to {
+    background-color: #f00; } }
+
+@-ms-keyframes blinkRed {
+  .pokedex .header from {
+    background-color: #f00; }
+  .pokedex .header 50% {
+    background-color: #a00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0; }
+  .pokedex .header to {
+    background-color: #f00; } }
+
+@-o-keyframes blinkRed {
+  from {
+    background-color: #f00; }
+  50% {
+    background-color: #a00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0; }
+  to {
+    background-color: #f00; } }
+
+@keyframes blinkRed {
+  from {
+    background-color: #f00; }
+  50% {
+    background-color: #a00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0; }
+  to {
+    background-color: #f00; } }
+    .pokedex .header .yellow-light {
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: yellow;
+      width: 10px;
+      height: 10px;
+      margin: 0rem 0.5rem 0rem 0rem;
+      -webkit-animation: blinkYellow 1.5s infinite;
+      -moz-animation: blinkYellow 1.5s infinite;
+      -ms-animation: blinkYellow 1.5s infinite;
+      -o-animation: blinkYellow 1.5s infinite;
+      animation: blinkYellow 1.5s infinite; }
+
+@-webkit-keyframes blinkYellow {
+  from {
+    background-color: #ff0; }
+  50% {
+    background-color: #aa0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #ff0; } }
+
+@-moz-keyframes blinkYellow {
+  from {
+    background-color: #ff0; }
+  50% {
+    background-color: #aa0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #ff0; } }
+
+@-ms-keyframes blinkYellow {
+  .pokedex .header from {
+    background-color: #ff0; }
+  .pokedex .header 50% {
+    background-color: #aa0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  .pokedex .header to {
+    background-color: #ff0; } }
+
+@-o-keyframes blinkYellow {
+  from {
+    background-color: #ff0; }
+  50% {
+    background-color: #aa0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #ff0; } }
+
+@keyframes blinkYellow {
+  from {
+    background-color: #ff0; }
+  50% {
+    background-color: #aa0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #ff0; } }
+    .pokedex .header .green-light {
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: green;
+      width: 10px;
+      height: 10px;
+      -webkit-animation: blinkGreen 1.5s infinite;
+      -moz-animation: blinkGreen 1.5s infinite;
+      -ms-animation: blinkGreen 1.5s infinite;
+      -o-animation: blinkGreen 1.5s infinite;
+      animation: blinkGreen 1.5s infinite; }
+
+@-webkit-keyframes blinkGreen {
+  from {
+    background-color: #304701; }
+  50% {
+    background-color: #abff00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89ff00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #304701; } }
+
+@-moz-keyframes blinkGreen {
+  from {
+    background-color: #304701; }
+  50% {
+    background-color: #abff00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89ff00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #304701; } }
+
+@-ms-keyframes blinkGreen {
+  .pokedex .header from {
+    background-color: #304701; }
+  .pokedex .header 50% {
+    background-color: #abff00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89ff00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  .pokedex .header to {
+    background-color: #304701; } }
+
+@-o-keyframes blinkGreen {
+  from {
+    background-color: #304701; }
+  50% {
+    background-color: #abff00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89ff00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #304701; } }
+
+@keyframes blinkGreen {
+  from {
+    background-color: #304701; }
+  50% {
+    background-color: #abff00;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #89ff00 0 -1px 9px, rgba(0, 0, 0, 0.2) 0 2px 0; }
+  to {
+    background-color: #304701; } }
+    .pokedex .header .hamburger-menu {
+      font-size: 2.8rem;
+      margin: auto 0.5rem auto 0;
+      color: black;
+      cursor: pointer; }
+  .pokedex .control {
+    grid-column: 1 / -1;
+    grid-row: span 6;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr); }
+    .pokedex .control_name-container {
+      grid-column: 1 / 9;
+      grid-row: 1 / 4;
+      background-color: #51ae5f;
+      border: 1px solid black;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0.5rem 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .pokedex .control_name {
+      color: black;
+      padding: 0 0 0 1rem; }
+    .pokedex .control_info-button-wrapper {
+      grid-column: 9 / -1;
+      grid-row: 1 / 4;
+      width: 50px;
+      height: 50px;
+      border: 1px solid lightblue;
+      border-radius: 50%;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .pokedex .control_info-button {
+      color: black;
+      font-size: 3rem; }
+    .pokedex .control_pokemon-id {
+      grid-column: 1/ 6;
+      font-size: 1.2rem; }
+    .pokedex .control_pokemon-types {
+      grid-column: 1 / 6;
+      grid-row: span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .pokedex .control_pokemon-type {
+      font-size: 2rem; }
+    .pokedex .control_button-group {
+      grid-column: 6 / -1;
+      grid-row: 4 / 6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .pokedex .control_left-button-wrapper {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .pokedex .control_right-button-wrapper {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .pokedex .control_direction-button {
+      font-size: 3rem; }

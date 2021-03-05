@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import NavBar from '../../components/navigation/NavBar';
 import SideDrawer from '../../components/navigation/SideDrawer';
 import Home from '../home/Home';
@@ -20,8 +20,8 @@ const MainRoutes = ({ location }) => {
       {showDrawer && <SideDrawer toggleDrawer={toggleDrawer} />}
       <div className={location.pathname === '/pokedex' ? "NavLess-Content" : "Content"}>
         <Switch>
-          <Route path={["/", "/home"]} exact component={Home} />
-          <Route path="/pokedex">
+          {/* <Route path={["/", "/home"]} exact component={Home} /> */}
+          <Route path={["/", "/pokedex"]} exact>
             <PokeDexMobile toggleDrawer={toggleDrawer}/>
             {/* <Test /> */}
           </Route>
@@ -29,6 +29,7 @@ const MainRoutes = ({ location }) => {
           <Route path="/stats-game" component={GuessStats} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Redirect to="/pokedex"/>
         </Switch>
       </div>
     </div>

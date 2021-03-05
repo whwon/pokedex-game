@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### CSS/SCSS Structure
 
-## Available Scripts
+The CSS/SCSS are all located under the assets folder. The SCSS folder is further broken down into multiple folders of its own that is organized in a way for me to understand them better. These folders have numeric values in the front of the name because my main scss compiles in a cascading manner so the order indeed does matter. Got the idea from: https://www.youtube.com/watch?v=qUnIReTCsZY
 
-In the project directory, you can run:
+## 1-helpers
 
-### `yarn start`
+They consist of any scss files that help add basic organization to the project. This is where I keep my variables, mixins, and functions which are unique to scss and is used widely in the project to help -setup it's scss structure.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# \_functions.scss
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# \_mixins.scss
 
-### `yarn test`
+# \_variables.scss
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 2-tools
 
-### `yarn build`
+These are anything that are third-party code that I reference and use. So something like normalize.css or reset.css would live here.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# \_normalize.scss
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 3-basics
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These are the bare bone basics of the web site. These will mainly be simple components that are usually one tiny element component.
 
-### `yarn eject`
+# \_background.scss
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# \_buttons.scss
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# \_reset.scss
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# \_typography.scss
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 4-layout
 
-## Learn More
+These are any major architectural structure of the site. The way the site will be structured and layed out.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# \_navigation.scss
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# \_footer.scss
 
-### Code Splitting
+# \_drawer.scss
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## 5-modules
 
-### Analyzing the Bundle Size
+Something that is very modular, you can consider this as something like components that make up the layout of the page.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## 6-pages
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+These are the pages and templates that takes the layouts, components, and modules to make up the rest of the page.

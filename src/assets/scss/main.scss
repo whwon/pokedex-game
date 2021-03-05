@@ -1,0 +1,26 @@
+// helpers
+@import './1-helpers/variables';
+
+// tools
+@import './2-tools/normalize';
+
+// basics
+@import './3-basics/backDrop';
+@import './3-basics/loader';
+@import './3-basics/loaderBackDrop';
+@import './3-basics/reset';
+@import './3-basics/typography';
+
+// layouts
+@import './4-layouts/navbar';
+@import './4-layouts/sideDrawer';
+
+// components
+@import './5-components/screen';
+@import './5-components/startingPokeBall';
+
+// pages
+@import './6-pages/app';
+@import './6-pages/home';
+// @import './6-pages/pokedex';
+@import './6-pages/pokedexmobile';
